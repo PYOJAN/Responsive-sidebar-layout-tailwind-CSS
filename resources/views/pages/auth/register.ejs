@@ -1,0 +1,112 @@
+<div class="relative bg-gray-100 p-4 rounded-md w-11/12 md:w-7/12 lg:w-6/12 xl:w-2/6 shadow-md" id="registration-form-wrapper">
+    <h1 class="font-semibold text-2xl mb-6 mt-4">Create account.</h1>
+
+    <div class="flex flex-col p-2 rounded-sm mb-2 overflow-hidden whitespace-nowrap">
+        <form class="relative text-gray-400" action="/auth/register" method="post" id="registration-form">
+
+            <div class="form-items w-full mb-4">
+                <div class="form-item">
+                    <label for="name" class="text-sm text-gray-500 ">Full Name
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center flex items-center flex-col">
+                        <input class="input-field" autocomplete="off" type="text" name="full_name" id="full_name" placeholder="Full Name"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-user m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-items w-full mb-4">
+                <div class="form-item">
+                    <label for="name" class="text-sm text-gray-500 ">Email
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center flex items-center flex-col ">
+                        <input class="input-field lowercase" autocomplete="off" type="text" name="email" id="email" placeholder="example@email.com"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-envelope m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-items flex items-center w-full mb-4 space-x-2">
+                <div class="form-item w-1/2">
+                    <label for="name" class="text-sm text-gray-500 ">Password
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center  flex items-center flex-col">
+                        <input class="input-field" autocomplete="off" type="password" name="password" id="password" placeholder="password"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-lock-open-alt m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+                <div class="form-item w-1/2">
+                    <label for="name" class="text-sm whitespace-nowrap text-gray-500 ">Confirm password
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center  flex items-center flex-col">
+                        <input class="input-field" autocomplete="off" type="password" name="con_password" id="con_password" placeholder="confrim_password"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-lock-alt m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-items flex items-center w-full mb-4 space-x-2">
+                <div class="form-item w-1/2">
+                    <label for="name" class="text-sm text-gray-500 ">Mobile No.
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center  flex items-center flex-col">
+                        <input class="input-field" autocomplete="off" type="text" name="mobileNo" id="mobileNo" placeholder="999-999-9999"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-mobile-alt m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+                <div class="form-item w-1/2">
+                    <label for="name" class="text-sm whitespace-nowrap text-gray-500 ">Dote of Birth
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center  flex items-center flex-col">
+                        <input class="input-field" autocomplete="off" type="text" name="DOB" id="DOB" placeholder="Date of birth" readonly="readonly"/>
+                        <i class='absolute left-0 text-lg font-semibold p-2 text-gray-400 bx bx-calendar m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-items w-full mb-4">
+                <div class="form-item">
+                    <label for="name" class="text-sm text-gray-500 ">Gender
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative form-controll justify-center flex items-center flex-col">
+                        <input class="input-field lowercase" autocomplete="off" type="text" name="gender" id="gender" placeholder="Gender"/>
+                        <i class='absolute left-0 text-lg font-semibold px-2 text-gray-400 bx bx-envelope m-0 leading-none'></i>
+                        <i class='absolute right-1 bx bx-info-circle'></i>
+                        <i class='absolute right-1 bx bx-check'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-items error-field relative flex items-center w-full invisible h-0">
+                <ul class="error-message bg-red-100 z-50 p-2 pl-8 pr-4 w-full text-rose-900 break-words mb-4 border-2 border-red-400 rounded-md list-disc"></ul>
+            </div>
+
+            <div class="form-items flex items-center w-full ">
+                <div class="w-1/2 py-2 text-lg font-bold tracking-wider">
+                    <button class="self-end w-11/12 text-white rounded-full bg-teal-600 py-2 cursor-pointer focus:outline-none" id="register" type="submit">Register</button>
+                </div>
+                <div class="flex items-center flex-1 justify-center ">
+                    <h3>Already have an account
+                        <a class="hover:text-teal-600 text-teal-500 underline" href="#">login</a>
+                    </h3>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

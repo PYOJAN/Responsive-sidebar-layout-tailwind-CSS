@@ -1,0 +1,53 @@
+/* ./resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom css*/
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+input {
+    @apply text-sm pl-8 w-full appearance-none p-2 outline-none rounded-md border-2 border-gray-300 text-gray-800 font-semibold;
+    &:focus {
+        @apply border-gray-600;
+    }
+    &:focus + i {
+        @apply text-gray-600;
+    }
+}
+
+i.bx-info-circle,
+i.bx-check {
+    visibility: hidden;
+}
+
+
+.form-controll.error input {
+    border: #F43F5E solid 2px;
+    background: #FFE4E6;
+    & + i {
+        color: #F43F5E;
+    }
+    & ~ i.bx-info-circle {
+        color: #F43F5E;
+        visibility: visible;
+    }
+}
+.form-controll.success input {
+    border: #34D399 solid 2px;
+    & + i {
+        color: #34D399;
+    }
+    & ~ i.bx-check {
+        color: #34D399;
+        visibility: visible;
+    }
+}
+
+input[type=submit] {
+    &:hover {
+        @apply bg-green-500;
+    }
+}

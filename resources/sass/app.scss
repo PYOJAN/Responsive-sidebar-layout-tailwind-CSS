@@ -1,0 +1,64 @@
+/* ./resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom css*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.side-bar {
+    @apply py-4 shadow-sm border-r border-gray-300 transition-all duration-300 ease-out;
+    width: 60px;
+    @media (max-width: 640px) { 
+        width: 190px;
+     }
+}
+.w__14 {
+    width: 190px;
+}
+
+.menu-items {
+    @apply flex items-center border-l-4 border-transparent px-4 py-1 my-1 cursor-pointer transition-all duration-300 ease-out;
+    &:hover {
+        @apply border-cyan-500 text-cyan-500;
+    }
+}
+.active {
+    @apply border-cyan-500 text-cyan-600;
+}
+.dropdown {
+    &:hover .dropdown-menu{
+        height: auto;
+        padding: 8px 10px;
+    }
+}
+
+.dropdown-menu {
+    @apply absolute whitespace-nowrap top-10 right-0 bg-gray-50 rounded-sm shadow-md overflow-hidden;
+    height: 0;
+    padding: 0 10px;
+}
+#toggler {
+    @media (max-width: 640px) {
+        visibility:hidden;
+        z-index: 0;
+
+    }
+}
+#toggler-x-value {
+    @apply absolute flex items-center rounded-r-md p-1 focus:outline-none text-white bg-gray-800;
+
+    @media (min-width: 640px)  {
+        display: none;
+    }
+
+}
+
+// .dropdown-show {
+//     height: auto;
+//     padding: 8px 10px;
+// }

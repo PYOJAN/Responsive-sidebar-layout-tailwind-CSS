@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <title><%- title %></title>
+    </head>
+    <body>
+
+        <div
+            class="lg:container mx-auto flex relative flex-shrink-0 overflow-visible text-gray-600">
+            <!-- Sidebar -->
+            <%- include('./../partials/sidebar.ejs')%>
+            <!-- Right side body wrapper -->
+            <div
+                class="relativ h-screen flex-1 flex flex-col">
+                <!-- Top-Nav bar -->
+                <%- include('./../partials/header.ejs')%>
+                <!-- main Body -->
+                <div class="h-full top-12 p-2 bg-gray-100">
+                    <div class="bg-gray-50 p-2 rounded-md h-full">
+                        <%- body %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+
+    </body>
+</html>

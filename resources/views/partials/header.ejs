@@ -1,0 +1,31 @@
+<div
+    class="flex items-center justify-between top-0 left-0 px-3 w-full h-12 border-b border-gray-300 shadow-sm">
+    <!-- Toggler -->
+    <button class="flex items-center rounded-full p-1 focus:outline-none hover:bg-cyan-400 text-white bg-cyan-300" id="toggler">
+        <i class="font-semibold bx bx-menu-alt-left"></i>
+    </button>
+
+    <ul class="h-full flex items-center text-lg mr-2">
+        <li class="mx-4 cursor-pointer relative">
+            <i class='bx bx-bell'></i>
+            <span class="absolute block w-1.5 h-1.5 bg-red-700 -top-0 -right-1 rounded-full animate-ping"></span>
+            <span class="absolute block w-1.5 h-1.5 bg-red-700 -top-0 -right-1 rounded-full z-10"></span>
+        </li>
+        <li class="dropdown relative rounded-full cursor-pointer flex items-center flex-col">
+            <img class="w-8 h-8 rounded-full ring-2" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Rajesh+Prajapati" alt="">
+            <div class="dropdown-menu transition-all duration-300 ease-out">
+                <h1 class="text-gray-500 text-xs w-full">Account</h1>
+                <ul class="space-y-1 mt-2 text-sm">
+                    <li class="flex items-center space-x-2 hover:text-cyan-500">
+                        <i class='text-lg font-medium bx bx-user'></i>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li class="flex items-center space-x-2 hover:text-rose-500">
+                        <i class='text-lg font-medium bx bx-log-out-circle'></i>
+                        <a href="#">Log-Out</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

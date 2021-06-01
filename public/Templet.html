@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Dashbord</title>
+    </head>
+    <body>
+        <div
+            class="lg:container mx-auto flex relative flex-shrink-0 overflow-visible text-gray-600">
+            <!-- Sidebar -->
+            <div class="absolute lg:static md:static xl:static side-bar w__14 flex-shrink-0 z-50 bg-gray-800 h-screen transform -translate-x-full lg:translate-x-0 md:translate-x-0">
+                <div class="relative w-ful flex flex-nowrap items-center select-none cursor-pointer px-4">
+                    <button class="-right-6 -top-1 z-50 group" id="toggler-x-value">
+                        <i class="font-semibold transform bx bxs-chevron-right" id="i__btn"></i>
+                    </button>
+
+                    <img class=" w-8 h-8 rounded-md " src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Rajesh+Prajapati" alt="">
+                    <span class="ml-4 text-lg font-bold whitespace-nowrap text-gray-50 w-full overflow-hidden ">Rudra Trans</span>
+                </div>
+                <ul class="menu mt-6 text-gray-200 w-full overflow-hidden">
+                    <li class="menu-items active">
+                        <a class="flex items-center flex-shrink-0" href="#">
+                            <i class='text-2xl bx bx-category mr-5'></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a class="flex items-center flex-shrink-0" href="#">
+                            <i class='text-2xl bx bx-stats mr-5'></i>
+                            Report
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a class="flex items-center flex-shrink-0" href="#">
+                            <i class='text-2xl bx bx-folder mr-5'></i>
+                            Master
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a class="flex items-center flex-shrink-0" href="#">
+                            <i class='text-2xl bx bx-rupee mr-5'></i>
+                            Account
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a class="flex items-center flex-shrink-0" href="#">
+                            <i class='text-2xl bx bx-cog mr-5'></i>
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right side body wrapper -->
+            <div
+                class="relativ h-screen flex-1 flex flex-col">
+                <!-- Top-Nav bar -->
+                <div
+                    class="flex items-center justify-between top-0 left-0 px-3 w-full h-12 border-b border-gray-300 shadow-sm">
+                    <!-- Toggler -->
+                    <button class="flex items-center rounded-full p-1 focus:outline-none hover:bg-cyan-400 text-white bg-cyan-300" id="toggler">
+                        <i class="font-semibold bx bx-menu-alt-left"></i>
+                    </button>
+
+                    <ul class="h-full flex items-center text-lg mr-2">
+                        <li class="mx-4 cursor-pointer relative">
+                            <i class='bx bx-bell'></i>
+                            <span class="absolute block w-1.5 h-1.5 bg-red-700 -top-0 -right-1 rounded-full animate-ping"></span>
+                            <span class="absolute block w-1.5 h-1.5 bg-red-700 -top-0 -right-1 rounded-full z-10"></span>
+                        </li>
+                        <li class="dropdown relative rounded-full cursor-pointer flex items-center flex-col">
+                            <img class="w-8 h-8 rounded-full ring-2" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Rajesh+Prajapati" alt="">
+                            <div class="dropdown-menu transition-all duration-300 ease-out">
+                                <h1 class="text-gray-500 text-xs w-full">Account</h1>
+                                <ul class="space-y-1 mt-2 text-sm">
+                                    <li class="flex items-center space-x-2 hover:text-cyan-500">
+                                        <i class='text-lg font-medium bx bx-user'></i>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li class="flex items-center space-x-2 hover:text-rose-500">
+                                        <i class='text-lg font-medium bx bx-log-out-circle'></i>
+                                        <a href="#">Log-Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- main Body -->
+                <div class="h-full top-12 p-2 bg-gray-100">
+                    <div class="bg-gray-50 p-2 rounded-md h-full">
+                        content
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
